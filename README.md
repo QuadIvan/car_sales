@@ -73,9 +73,6 @@ This project demonstrates key skills in time series forecasting, scenario analys
 ## Learnings & Next Steps
 - Demonstrated ability to forecast sales and perform scenario analysis in Excel.  
 - Learned how outliers can strongly distort forecasts and how to adjust for them.  
-- Next steps:  
-  - Extend the analysis with Python forecasting models (ARIMA, Prophet).  
-  - Incorporate external factors (fuel prices, financing rates, macroeconomic indicators).  
 
 ---
 
