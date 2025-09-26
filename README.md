@@ -1,21 +1,20 @@
 # Car Sales Forecasting Project
 
 ## Project Overview
-The purpose of this project is to analyze and forecast car sales using Excel and Python.  
+The purpose of this project is to analyze and forecast car sales using **Excel**.  
 This project demonstrates key skills in time series forecasting, scenario analysis, and correlation analysis between customer demographics and vehicle prices.  
 
 **Tools Used:**  
 - Excel (forecasting, what-if scenarios, correlation analysis)  
-- Python (forecasting models, validation, visualization)  
 
 ---
 
 ## Objectives
 1. **Sales Forecasting**  
-   Predict future car sales using Excel’s built-in forecasting tools and Python time series models.  
+   Predict future car sales using Excel’s built-in forecasting tools.  
 
 2. **What-If Scenario Analysis**  
-   Simulate different business scenarios, such as price increases or changes in sales growth, to assess their potential impact.  
+   Simulate different business scenarios, such as price increases or changes in demand, to assess their potential impact.  
 
 3. **Correlation Analysis**  
    Explore whether there is a relationship between customers’ annual income and the price of the vehicles they purchase.  
@@ -23,12 +22,11 @@ This project demonstrates key skills in time series forecasting, scenario analys
 ---
 
 ## Dataset
-- **Source:** [Car Sales Dataset](https://www.kaggle.com/datasets/missionjee/car-sales-report)
+- **Source:** [Car Sales Dataset](https://www.kaggle.com/datasets/missionjee/car-sales-report)  
 - **License:** [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0)  
 - **Main Variables:**  
   - `Car_id`  
   - `Date`  
-  - `Customer Name`  
   - `Gender`  
   - `Annual Income`  
   - `Dealer_Name`  
@@ -40,44 +38,47 @@ This project demonstrates key skills in time series forecasting, scenario analys
   - `Price ($)`  
   - `Dealer_No`  
   - `Body Style`  
-  - `Phone`  
   - `Dealer_Region`  
 
 ---
 
 ## Methodology
 ### 1. Data Cleaning
-- Remove duplicates and missing values  
-- Convert `Date` into proper datetime format  
-- Standardize numerical columns such as `Annual Income` and `Price ($)`  
+- Removed duplicates and anonymized personal identifiers.  
+- Converted `Date` into proper datetime format and created a continuous calendar.  
+- Standardized numerical columns such as `Annual Income` and `Price ($)`.  
 
 ### 2. Forecasting
-- Excel: `FORECAST.ETS()` and trendlines  
-- Python: ARIMA / Prophet models for time series prediction  
+- Built a Forecast Sheet in Excel using `FORECAST.ETS()`.  
+- Compared results **with outliers** vs. **without outliers**.  
+- Adjusted the lower confidence bound to avoid negative values.  
 
 ### 3. Scenario Analysis (Excel What-If)  
-- Price increase simulation (e.g., +5%, +10%)  
-- Sales growth sensitivity analysis  
+- **Price Sensitivity Analysis:** simulated how projected sales change with ±10% price variations.  
+- **Elasticity Analysis:** assumed that every +5% price increase reduces demand by 3%, and simulated multiple price–demand scenarios using a 2-variable Data Table.  
 
 ### 4. Correlation Analysis
-- Pearson correlation between `Annual Income` and `Price ($)`  
-- Scatter plots with regression lines  
+- Used the Excel function `=CORREL(Annual_Income, Price)` to test if higher income leads to higher vehicle prices.  
+- Result: correlation coefficient = **0.012**, showing no significant linear relationship.  
 
 ---
 
 ## Results
-- Forecast charts showing projected car sales  
-- Scenario analysis tables for business decisions  
-- Correlation insights (positive, negative, or no relationship)  
+- Forecasts of car sales values with and without outliers.  
+- What-If Analysis tables showing how sales respond to changes in price and demand.  
+- Correlation analysis showing no clear relationship between annual income and car prices.  
 
 ---
 
 ## Learnings & Next Steps
-- Demonstrated ability to forecast sales and analyze scenarios in Excel and Python  
-- Learned how to connect customer demographics with vehicle pricing  
-- Next steps: extend the model with external factors (fuel prices, interest rates, macroeconomic indicators)  
+- Demonstrated ability to forecast sales and perform scenario analysis in Excel.  
+- Learned how outliers can strongly distort forecasts and how to adjust for them.  
+- Next steps:  
+  - Extend the analysis with Python forecasting models (ARIMA, Prophet).  
+  - Incorporate external factors (fuel prices, financing rates, macroeconomic indicators).  
 
 ---
 
 ## License
 The dataset used in this project is provided under the [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0).
+
