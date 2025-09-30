@@ -66,11 +66,23 @@ This project demonstrates key skills in time series forecasting, scenario analys
 ## Results
 - Forecasts of car sales values with and without outliers.  
 - What-If Analysis tables showing how sales respond to changes in price and demand.  
+  - Example: if prices increase by **15%** and demand decreases by **9%**, total sales would still be **20.35% higher** compared to the baseline.  
 - Correlation analysis showing no clear relationship between annual income and car prices.  
 
 ---
 
-## Learnings & Next Steps
+## Documentation
+The repository includes additional resources for transparency and reproducibility:
+
+- **Excel Workbook** [Car Sales Project] 
+  Contains the cleaned dataset, pivot tables, forecast sheets, what-if scenarios, and the final dashboard.  
+
+- **Project Notes (Markdown)** [Project Notes] 
+  Step-by-step notes documenting the workflow (data cleaning, forecasting, what-if analysis, correlation).  
+
+  ---
+  
+## Learnings
 - Demonstrated ability to forecast sales and perform scenario analysis in Excel.  
 - Learned how outliers can strongly distort forecasts and how to adjust for them.  
 
