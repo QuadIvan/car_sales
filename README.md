@@ -74,11 +74,17 @@ This project demonstrates key skills in time series forecasting, scenario analys
 ## Documentation
 The repository includes additional resources for transparency and reproducibility:
 
-- **Excel Workbook** [Car Sales Project] 
+- **Excel Workbook** [Car Sales Project](docs/Car_Sales_Project.xlsx) 
   Contains the cleaned dataset, pivot tables, forecast sheets, what-if scenarios, and the final dashboard.  
 
-- **Project Notes (Markdown)** [Project Notes] 
-  Step-by-step notes documenting the workflow (data cleaning, forecasting, what-if analysis, correlation).  
+- **Project Notes (Markdown)** [Project Notes](docs/notes_car_sales.md) 
+  Step-by-step notes documenting the workflow (data cleaning, forecasting, what-if analysis, correlation).
+
+---
+
+  ## Dashboard Preview
+
+![Car Sales Dashboard](docs/dashboard.png)
 
   ---
   
